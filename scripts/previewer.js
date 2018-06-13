@@ -34,7 +34,7 @@ const previewer = createPreviewer({
 });
 
 const listen = () =>
-  previewer.listen(3003, ({ server, emit }) => {
+  previewer.listen(443, ({ server, emit }) => {
     const emitReady = _.once(() => emit('ready'));
     const emitStyles = done => {
       emit('styles');
